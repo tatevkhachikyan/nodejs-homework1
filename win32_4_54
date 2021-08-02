@@ -1,0 +1,33 @@
+let os = require('os')
+console.log(os.totalmem())
+const os = require('os')
+const network = os.networkInterfaces()
+network['Ethernet'].forEach(item =>{
+    if (item.family === 'IPv4'){
+        console.log(item.address)
+    }
+})
+const os = require('os')
+const fs = require('fs')
+const random = require('random')
+
+const name = random.integer(10^7,10^8)
+fs.writeFile(name + '.txt', os.cpus().length.toString(),(err) => {
+    if (err){
+        console.log(err.code)
+    }
+    console.log('OK')
+})
+const fs = require('fs')
+fs.readFile('./input.txt',  (err,data) => {
+    if (err){
+        console.log(err.code)
+    }
+    ///\s+/g chgitem esi inch a nshanakum documentation-i mej em nayel te vonc replace anem
+    fs.writeFile('write.txt',data.toString().replace(/\s+/g, '-'), (err) => {
+        if (err){
+            console.log(err.code)
+        }
+        console.log('OK')
+    })
+})
