@@ -1,3 +1,10 @@
+//ՈՒնենք config.json ֆայլ ,
+// {
+//  "host" : "localhost",
+//  "port" : 3000
+// }
+// պարունակությամբ ․ Ստեղծել սերվեր , որը լսում է json-ի մեջ լրացված հոսթին և
+// պորտին։
 const fs = require('fs')
 const http = require('http')
 
